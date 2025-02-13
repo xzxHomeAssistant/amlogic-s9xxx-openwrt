@@ -31,3 +31,7 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
 # ------------------------------- Other ends -------------------------------
 
+# 修改为官方vermagic，以便后期安装官方ipk
+curl -s https://downloads.immortalwrt.org/releases/24.10.0/targets/armsr/armv8/immortalwrt-24.10.0-armsr-armv8.manifest | grep kernel | awk '{print $3}' | awk -F- '{print $3}' > .vermagic
+sed -i -e 's/^\(.\).*vermagic$/\1cp $(TOPDIR)\/.vermagic $(LINUX_DIR)\/.vermagic/' include/kernel-defaults.mk
+
