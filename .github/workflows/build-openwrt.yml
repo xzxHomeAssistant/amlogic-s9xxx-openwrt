@@ -179,11 +179,11 @@ on:
         default: "6.1.y_6.12.y"
         type: choice
         options:
-          - 5.4.y
-          - 5.10.y
-          - 5.15.y
+          - 5.4.255
+          - 5.10.233
+          - 5.15.177
           - 6.1.y
-          - 6.6.y
+          - 6.6.73
           - 6.12.y
           - 5.4.y_5.10.y
           - 5.15.y_6.1.y
@@ -235,7 +235,7 @@ env:
   CONFIG_FILE: config/${{ inputs.source_branch }}/config
   DIY_P1_SH: config/${{ inputs.source_branch }}/diy-part1.sh
   DIY_P2_SH: config/${{ inputs.source_branch }}/diy-part2.sh
-  TZ: America/New_York
+  TZ: Asia/Shanghai
 
 jobs:
   build:
@@ -259,6 +259,8 @@ jobs:
           sudo -E apt-get -y update
           sudo -E apt-get -y purge azure-cli ghc* zulu* llvm* firefox google* dotnet* powershell openjdk* mongodb* moby* || true
           sudo -E apt-get -y install $(curl -fsSL https://tinyurl.com/ubuntu2204-make-openwrt)
+          sudo -E apt-get -y install libstdc++-dev
+          sudo -E apt-get -y install clang
           sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
           sudo -E apt-get -y autoremove --purge
