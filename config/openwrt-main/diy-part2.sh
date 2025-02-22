@@ -34,9 +34,9 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
 
-# 更新 golang 1.22 版本
+# 更新 golang 1.23 版本
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 
 #修改为官方vermagic，以便后期安装官方ipk
 curl -s https://downloads.openwrt.org/releases/23.05.5/targets/armsr/armv8/openwrt-23.05.5-armsr-armv8.manifest | grep kernel | awk '{print $3}' | awk -F- '{print $3}' > .vermagic
