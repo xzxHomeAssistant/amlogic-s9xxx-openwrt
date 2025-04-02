@@ -465,7 +465,7 @@ CONFIG_TARGET_INIT_SUPPRESS_STDERR=y
 # CONFIG_VERSIONOPT is not set
 CONFIG_PER_FEED_REPO=y
 CONFIG_FEED_packages=y
-CONFIG_FEED_luci=y
+CONFIG_FEED_=y
 CONFIG_FEED_routing=y
 CONFIG_FEED_telephony=y
 CONFIG_FEED_video=y
@@ -2559,7 +2559,7 @@ CONFIG_PACKAGE_kmod-nft-nat=y
 CONFIG_PACKAGE_kmod-nft-netdev=y
 CONFIG_PACKAGE_kmod-nft-offload=y
 # CONFIG_PACKAGE_kmod-nft-queue is not set
-# CONFIG_PACKAGE_kmod-nft-socket is not set
+CONFIG_PACKAGE_kmod-nft-socket=y
 CONFIG_PACKAGE_kmod-nft-tproxy=y
 # CONFIG_PACKAGE_kmod-nft-xfrm is not set
 # CONFIG_PACKAGE_kmod-oaf is not set
@@ -2745,7 +2745,7 @@ CONFIG_PACKAGE_kmod-mdio-bus-mux=y
 # CONFIG_PACKAGE_kmod-nat46 is not set
 # CONFIG_PACKAGE_kmod-netconsole is not set
 # CONFIG_PACKAGE_kmod-netem is not set
-# CONFIG_PACKAGE_kmod-netlink-diag is not set
+CONFIG_PACKAGE_kmod-netlink-diag=y
 # CONFIG_PACKAGE_kmod-nlmon is not set
 # CONFIG_PACKAGE_kmod-nsh is not set
 # CONFIG_PACKAGE_kmod-openvswitch is not set
@@ -5062,9 +5062,9 @@ CONFIG_PACKAGE_libjson-c=y
 CONFIG_PACKAGE_liblua=y
 # CONFIG_PACKAGE_liblua5.3 is not set
 # CONFIG_PACKAGE_liblua5.4 is not set
-CONFIG_PACKAGE_liblucihttp=y
-CONFIG_PACKAGE_liblucihttp-lua=y
-CONFIG_PACKAGE_liblucihttp-ucode=y
+CONFIG_PACKAGE_libhttp=y
+CONFIG_PACKAGE_libhttp-lua=y
+CONFIG_PACKAGE_libhttp-ucode=y
 CONFIG_PACKAGE_liblzo=y
 # CONFIG_PACKAGE_libmad is not set
 CONFIG_PACKAGE_libmagic=y
@@ -5324,7 +5324,7 @@ CONFIG_PACKAGE_libxml2=y
 # CONFIG_PACKAGE_protobuf-lite is not set
 # CONFIG_PACKAGE_pthsem is not set
 # CONFIG_PACKAGE_re2 is not set
-CONFIG_PACKAGE_rpcd-mod-luci=y
+CONFIG_PACKAGE_rpcd-mod-=y
 # CONFIG_PACKAGE_rpcd-mod-rad2-enc is not set
 CONFIG_PACKAGE_rpcd-mod-rrdns=y
 # CONFIG_PACKAGE_rpcd-mod-wireguard is not set
@@ -5497,8 +5497,8 @@ CONFIG_PACKAGE_luci-app-dockerman=y
 # CONFIG_PACKAGE_luci-app-filebrowser-go is not set
 # CONFIG_PACKAGE_luci-app-filemanager is not set
 CONFIG_PACKAGE_luci-app-firewall=y
-CONFIG_PACKAGE_luci-app-frpc=y
-CONFIG_PACKAGE_luci-app-frps=y
+# CONFIG_PACKAGE_luci-app-frpc is not set
+# CONFIG_PACKAGE_luci-app-frps is not set
 # CONFIG_PACKAGE_luci-app-fwknopd is not set
 # CONFIG_PACKAGE_luci-app-gost is not set
 # CONFIG_PACKAGE_luci-app-haproxy-tcp is not set
@@ -5550,7 +5550,7 @@ CONFIG_PACKAGE_luci-app-ksmbd=y
 # CONFIG_PACKAGE_luci-app-omcproxy is not set
 # CONFIG_PACKAGE_luci-app-openclash is not set
 # CONFIG_PACKAGE_luci-app-openthread is not set
-CONFIG_PACKAGE_luci-app-openvpn=y
+# CONFIG_PACKAGE_luci-app-openvpn is not set
 # CONFIG_PACKAGE_luci-app-openvpn-server is not set
 # CONFIG_PACKAGE_luci-app-openwisp is not set
 # CONFIG_PACKAGE_luci-app-oscam is not set
@@ -5630,7 +5630,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 # CONFIG_PACKAGE_luci-app-usteer is not set
 # CONFIG_PACKAGE_luci-app-v2raya is not set
 # CONFIG_PACKAGE_luci-app-verysync is not set
-CONFIG_PACKAGE_luci-app-vlmcsd=y
+# CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-vnstat2 is not set
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
 # CONFIG_PACKAGE_luci-app-watchcat is not set
@@ -5889,7 +5889,7 @@ CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-frpc-tr is not set
 # CONFIG_PACKAGE_luci-i18n-frpc-uk is not set
 # CONFIG_PACKAGE_luci-i18n-frpc-vi is not set
-CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-frpc-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-frpc-zh-tw is not set
 # CONFIG_PACKAGE_luci-i18n-frps-ar is not set
 # CONFIG_PACKAGE_luci-i18n-frps-bg is not set
@@ -5923,7 +5923,7 @@ CONFIG_PACKAGE_luci-i18n-frpc-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-frps-tr is not set
 # CONFIG_PACKAGE_luci-i18n-frps-uk is not set
 # CONFIG_PACKAGE_luci-i18n-frps-vi is not set
-CONFIG_PACKAGE_luci-i18n-frps-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-frps-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-frps-zh-tw is not set
 # CONFIG_PACKAGE_luci-i18n-ksmbd-ar is not set
 # CONFIG_PACKAGE_luci-i18n-ksmbd-bg is not set
@@ -5995,7 +5995,7 @@ CONFIG_PACKAGE_luci-i18n-ksmbd-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-openvpn-uk is not set
 # CONFIG_PACKAGE_luci-i18n-openvpn-vi is not set
 # CONFIG_PACKAGE_luci-i18n-openvpn-yua is not set
-CONFIG_PACKAGE_luci-i18n-openvpn-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-openvpn-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-openvpn-zh-tw is not set
 # CONFIG_PACKAGE_luci-i18n-package-manager-ar is not set
 # CONFIG_PACKAGE_luci-i18n-package-manager-bg is not set
@@ -6138,7 +6138,7 @@ CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-yua is not set
 CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-zh-tw is not set
-CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-tw is not set
 # end of LuCI
 
@@ -6978,8 +6978,8 @@ CONFIG_PACKAGE_cgi-io=y
 # CONFIG_PACKAGE_dufs is not set
 # CONFIG_PACKAGE_etebase is not set
 # CONFIG_PACKAGE_freshclam is not set
-CONFIG_PACKAGE_frpc=y
-CONFIG_PACKAGE_frps=y
+# CONFIG_PACKAGE_frpc is not set
+# CONFIG_PACKAGE_frps is not set
 # CONFIG_PACKAGE_gateway-go is not set
 # CONFIG_PACKAGE_gatling is not set
 # CONFIG_PACKAGE_haproxy is not set
@@ -7448,7 +7448,7 @@ CONFIG_PACKAGE_uclient-fetch=y
 # CONFIG_PACKAGE_v2ray-core is not set
 # CONFIG_PACKAGE_vallumd is not set
 # CONFIG_PACKAGE_verysync is not set
-CONFIG_PACKAGE_vlmcsd=y
+# CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vnstat is not set
 # CONFIG_PACKAGE_vnstat2 is not set
 # CONFIG_PACKAGE_vxlan is not set
